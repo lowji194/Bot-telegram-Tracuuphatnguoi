@@ -36,7 +36,7 @@ def load_data():
 load_data()
 
 
-async def check_violation(plate_number):
+async def kiemtravipham(plate_number):
     """Request API kiểm tra dữ liệu biển số"""
     try:
         response = requests.post(API_PHAT_NGUOI, json={"bienso": plate_number})
@@ -48,7 +48,7 @@ async def check_violation(plate_number):
 
         # Kiểm tra nếu "data" không tồn tại hoặc không phải danh sách
         if "data" not in data or not isinstance(data["data"], list):
-            return "✅ Biển số {plate_number} chưa phát hiện lỗi phạt nguội."
+            return f"✅ Biển số {plate_number} chưa phát hiện lỗi phạt nguội."
 
         # Tạo danh sách kết quả từ dữ liệu API
         results = []
@@ -233,7 +233,7 @@ async def danhsach(update: Update, context: CallbackContext) -> None:
     text = f"📋 Các biển số bạn đã đăng ký ({len(plates)}/{max_plates}):"
 
     # Tạo danh sách nút xóa cho từng biển số
-    keyboard = [[InlineKeyboardButton(f"❌ Xóa - [{plate}]", callback_data=f"remove_{plate}")] for plate in plates]
+    keyboard = [[InlineKeyboardButton(f"❌ Xóa - {plate}", callback_data=f"remove_{plate}")] for plate in plates]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.effective_message.reply_text(text, reply_markup=reply_markup)
@@ -264,9 +264,9 @@ async def handle_kiemtra_bienso(update: Update, context: CallbackContext) -> Non
     await query.answer()
     plate_number = query.data.replace("check_", "")
     
-    await query.message.edit_text(f"🔍 Đang kiểm tra biển số... `{plate_number}`")
+    await query.message.edit_text(f"🔍 Đang kiểm tra biển số... {plate_number}")
     
-    result = await check_violation(plate_number)
+    result = await kiemtravipham(plate_number)
     await query.message.reply_text(result)
 
 
@@ -282,7 +282,7 @@ async def scheduled_violation_check(app):
                 print("📅 Hôm nay là Thứ Hai - Kiểm tra phạt nguội...")
 
                 for plate, chat_id in registered_plates.items():
-                    result = await check_violation(plate)
+                    result = await kiemtravipham(plate)
                     
                     if "——————————————" in result:
                         try:
