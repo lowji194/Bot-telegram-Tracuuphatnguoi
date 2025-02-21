@@ -9,7 +9,7 @@ from telegram import Update, BotCommand, InlineKeyboardMarkup, InlineKeyboardBut
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext, CallbackQueryHandler
 
 TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-API_PHAT_NGUOI = "https://api.checkphatnguoi.vn/phatnguoi"
+API_PHAT_NGUOI = "checkphatnguoi.vn yêu cầu gỡ sẽ cập nhật sau"
 
 DATA_FILE = "registered_plates.json"
 
