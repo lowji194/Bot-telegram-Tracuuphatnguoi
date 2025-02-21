@@ -1,0 +1,8 @@
+asyncio
+requests
+json
+os
+datetime
+threading
+re
+python-telegram-bot
