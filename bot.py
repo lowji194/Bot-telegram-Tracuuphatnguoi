@@ -270,7 +270,7 @@ async def handle_kiemtra_bienso(update: Update, context: CallbackContext) -> Non
     await query.message.reply_text(result)
 
 
-async def scheduled_violation_check(app):
+async def lich_kiemtravipham(app):
     """Kiểm tra phạt nguội vào Thứ Hai, chạy song song với bot"""
     print("🚀 Lịch kiểm tra đã chạy")
     has_run_today = False  
@@ -299,11 +299,11 @@ async def scheduled_violation_check(app):
 
         await asyncio.sleep(21600)  # Chờ 6 tiếng
         
-def start_scheduled_task(app):
-    """Chạy scheduled_violation_check trong một luồng riêng"""
+def start_kiemtra_task(app):
+    """Chạy lich_kiemtravipham trong một luồng riêng"""
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    loop.run_until_complete(scheduled_violation_check(app))
+    loop.run_until_complete(lich_kiemtravipham(app))
 
 def main():
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
@@ -318,8 +318,8 @@ def main():
     app.add_handler(CallbackQueryHandler(handle_xoabienso, pattern=r"^remove_"))
     app.add_handler(CallbackQueryHandler(handle_menu, pattern=r"^(dangky|kiemtra|danhsach|huongdan|lienhe)$"))
 
-    # Tạo luồng riêng để chạy scheduled_violation_check
-    thread = threading.Thread(target=start_scheduled_task, args=(app,), daemon=True)
+    # Tạo luồng riêng để chạy lich_kiemtravipham
+    thread = threading.Thread(target=start_kiemtra_task, args=(app,), daemon=True)
     thread.start()
     
     print("✅ Bot đã sẵn sàng...")
