@@ -10,7 +10,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 
-"""Mọi người có thể tự thay đổi API và sửa lại theo ý mình"
+"""Mọi người có thể tự thay đổi API và sửa lại theo ý mình (do bên api.checkphatnguoi.vn/phatnguoi yêu cầu k sử dụng)"
 API_PHAT_NGUOI = "https://script.google.com/macros/s/AKfycbwvu1pYoA7vWXJ2cdJi4lHCf7LAHwwVzqjdZpLBdHM_rScqAzEKs1m5o0XS37hMTP7iMg/exec"
 
 DATA_FILE = "registered_plates.json"
