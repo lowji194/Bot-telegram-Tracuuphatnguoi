@@ -47,10 +47,18 @@ Bot Telegram để kiểm tra phạt nguội dựa trên biển số xe.
 
 Bot sẽ thực hiện kiểm tra vi phạm giao thông vào mỗi thứ Hai hàng tuần. Nếu phát hiện vi phạm, bot sẽ gửi thông báo đến người dùng đã đăng ký biển số.
 
-## 📞 Thông tin liên hệ
+---
 
-- 🌐 Website: [https://theloi.io.vn](https://theloi.io.vn)
-- 🔥 Bot kiểm tra phạt nguội 🔥
-- 👤 Tác giả: Nguyễn Thế Lợi
-- 📞 SĐT: 0963 159 294
-- 👮 Facebook: [https://www.facebook.com/Lowji194](https://www.facebook.com/Lowji194)
+## 📫 Liên hệ với tôi
+
+- 📞 **SĐT:** 0963 159 294
+- 🌐 **Website:** [lowji194.github.io](https://lowji194.github.io)
+- 📌 **Facebook:** [Lowji194](https://facebook.com/Lowji194)
+
+---
+
+## ☕ Nếu bạn thấy dự án này hữu ích, một ly cà phê từ bạn sẽ là động lực tuyệt vời để mình tiếp tục phát triển thêm!
+
+<p align="center">
+  <img src="https://pay.theloi.io.vn/QR.png?text=QR+Code" alt="Mời cà phê" width="240" />
+</p>
