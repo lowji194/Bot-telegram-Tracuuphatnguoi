@@ -60,5 +60,5 @@ Bot sẽ thực hiện kiểm tra vi phạm giao thông vào mỗi thứ Hai hà
 ## ☕ Nếu bạn thấy dự án này hữu ích, một ly cà phê từ bạn sẽ là động lực tuyệt vời để mình tiếp tục phát triển thêm!
 
 <p align="center">
-  <img src="https://pay.theloi.io.vn/QR.png?text=QR+Code" alt="Mời cà phê" width="240" />
+  <img src="https://theloi.io.vn/pay/QR.png?text=QR+Code" alt="Mời cà phê" width="240" />
 </p>
