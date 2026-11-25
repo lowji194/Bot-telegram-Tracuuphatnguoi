@@ -1,3 +1,5 @@
+[![🇺🇸 English](https://img.shields.io/badge/Language-English-1e293b?style=flat-square)](README-EN.md)
+
 # Bot-telegram-Tracuuphatnguoi
 
 Bot Telegram để kiểm tra phạt nguội dựa trên biển số xe.
@@ -23,9 +25,9 @@ Bot Telegram để kiểm tra phạt nguội dựa trên biển số xe.
     pip install -r requirements.txt
     ```
 
-3. Thiết lập token của bot Telegram trong script:
+3. Thiết lập token của bot Telegram qua biến môi trường `TELEGRAM_BOT_TOKEN` (xem `.env.example`) hoặc gán trực tiếp trong `bot.py`:
     ```python
-    TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+    TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
     ```
 
 ## 🚀 Sử dụng
@@ -49,10 +51,10 @@ Bot sẽ thực hiện kiểm tra vi phạm giao thông vào mỗi thứ Hai hà
 
 ---
 
-## 📫 Liên hệ với tôi
+## 📫 Liên hệ
 
-- 📞 **SĐT:** 0963 159 294
-- 🌐 **Website:** [lowji194.github.io](https://lowji194.github.io)
+- 🌐 **Website:** [theloi.io.vn](https://theloi.io.vn)
+- 💬 **Telegram:** [@theloi194](https://t.me/theloi194)
 - 📌 **Facebook:** [Lowji194](https://facebook.com/Lowji194)
 
 ---

@@ -8,7 +8,7 @@ import re
 from telegram import Update, BotCommand, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext, CallbackQueryHandler
 
-TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN")
 
 """Mọi người có thể tự thay đổi API và sửa lại theo ý mình (do bên api.checkphatnguoi.vn/phatnguoi yêu cầu k sử dụng)"""
 API_PHAT_NGUOI = "https://api.checkphatnguoi.vn/phatnguoi"
