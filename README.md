@@ -62,3 +62,13 @@ Bot sẽ thực hiện kiểm tra vi phạm giao thông vào mỗi thứ Hai hà
 <p align="center">
   <img src="https://theloi.io.vn/pay/QR.png?text=QR+Code" alt="Mời cà phê" width="240" />
 </p>
+
+---
+
+## ☕ Buy me a coffee
+
+Nếu dự án này hữu ích với bạn, hãy mời mình một ly cà phê để ủng hộ việc duy trì và phát triển dự án. Cảm ơn bạn!
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/lowji194/lowji194/main/assets/donate-qr.svg"><img src="https://raw.githubusercontent.com/lowji194/lowji194/main/assets/donate-qr.svg" width="300" alt="Donate — scan the QR code"></a>
+</p>
